@@ -37,6 +37,15 @@ LOGGING = {
         },
     },
 }
+#email config
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # SMTP provider from .NET config
+EMAIL_PORT = 587  # Port from .NET config
+EMAIL_USE_TLS = True  # TLS is usually required for port 587
+EMAIL_HOST_USER = 'healthcaretestkutumba@gmail.com'  # Username from .NET config
+EMAIL_HOST_PASSWORD = 'yhyn apnz fjlx ktzw'  # Password from .NET config
+DEFAULT_FROM_EMAIL = 'pradattaaryal11@gmail.com'  # From address from .NET config
+
 
 
 # Quick-start development settings - unsuitable for production

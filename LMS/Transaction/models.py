@@ -14,7 +14,7 @@ class Transaction(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="transactions")  # Librarian
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name="transactions")
     transaction_type = models.CharField(max_length=10, choices=TRANSACTION_TYPES)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField()
 
     student_name = models.CharField(max_length=255)
     librarian_name = models.CharField(max_length=255)

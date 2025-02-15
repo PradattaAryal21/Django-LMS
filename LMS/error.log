@@ -2,3 +2,11 @@ Internal Server Error: /api/transactions/
 "POST /api/transactions/ HTTP/1.1" 500 76
 Internal Server Error: /api/transactions/
 "POST /api/transactions/ HTTP/1.1" 500 76
+Internal Server Error: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 500 119
+Internal Server Error: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 500 93
+Internal Server Error: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 500 112
+Internal Server Error: /api/transactions/
+"POST /api/transactions/ HTTP/1.1" 500 112
