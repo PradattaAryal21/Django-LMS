@@ -14,6 +14,29 @@ from pathlib import Path
 from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'ERROR',  # Only log errors and higher levels
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'error.log',  # Make sure the path is correct
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'ERROR',  # Set to ERROR to catch errors
+            'propagate': True,
+        },
+        'Transaction': {  # Custom logger for your app
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+    },
+}
 
 
 # Quick-start development settings - unsuitable for production
